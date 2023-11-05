@@ -1,0 +1,369 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #e9f5db;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    width: 100%;
+    height: 7%;
+    margin-top: auto;
+    background-color: #718355;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu {
+    width: 100%;
+    height: 10%;
+    padding: 3px;
+    font-family: Montserrat;
+    color: #000;
+    background-color: #718355;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_container {
+    width: 90% ;
+    height: 20%;
+    margin: auto;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    box-shadow: 0 0 50px -20px #000;
+    background-color: #b5c99a;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting {
+    width: 90%;
+    height: 8%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10%;
+    background-color: #87986a;
+    box-shadow: 0 0 50px -20px #000;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parameters{
+    width: 90%;
+    height: 6%;
+    margin: auto;
+    margin-top: 5%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    box-shadow: 0 0 50px -20px #000;
+    background-color: #b5c99a;
+    font-family: Montserrat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button_info {
+    width: 30%;
+    height: 10%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 10%;
+    background-color: #87986a;
+    box-shadow: 0 0 50px -20px#000;
+    font-family: Montserrat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button_info button {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 10%;
+    background-color: #87986a;
+    font-family: Montserrat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logout {
+    width: 10%;
+    height: 60%;
+    margin: auto;
+    border: 1px;
+    margin-left: auto;
+
+    border-radius: 10%;
+    background-color: #87986a;
+    font-family: Montserrat;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logout button {
+    float: right;
+    margin: 5px;
+}
+
+#params_info{
+    width: 15%;
+    height: 60%;
+    background: #e9edc9;
+    border-radius: 20%;
+    color: #000;
+    margin: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left_info{
+    width: 25%;
+    height: 80%;
+    background: #e9edc9;
+    border-radius: 20%;
+    color: #000;
+    margin: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#center_info{
+    width: 25%;
+    height: 80%;
+    background: #e9edc9;
+    border-radius: 20%;
+    color: #000;
+    margin: auto;
+    float: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right_info{
+    width: 25%;
+    height: 80%;
+    background: #e9edc9;
+    border-radius: 20%;
+    color: #000;
+    margin: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+#content_container {
+    width: 30%;
+    height: 55%;
+}
+
+#form_container {
+    width: 100%;
+    height: 100%;
+
+    background-color: #b5c99a;
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
+
+    overflow: hidden;
+}
+
+#form_header_container {
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #b5c99a, #b5c99a) 1;
+    background: #718355;
+}
+
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: #e9edc9;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #000;
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #718355, #718355) 1;
+}
+
+#button_container {
+    width: 100%;
+    height: 10%;
+
+    background: #718355;
+    border-radius: 20%;
+    color: #fff;
+
+    float: left;
+
+    margin-top: 5px;
+}
+
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    #green {
+        width: 15%;
+        height: 40%;
+    
+        background: transparent;
+        border-radius: 2%;
+        color: #fff;
+    
+        float: center   ;
+    
+        margin-top: 5px;
+    }
+    
+    #green button {
+        width: 50%;
+        height: 100%;
+        float: center;
+    
+        background: transparent;
+        color: inherit;
+    
+        font-family: Montserrat;
+        letter-spacing: 1px;
+        font-weight: 900;
+        font-size: 12px;
+    
+        cursor: pointer;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #greenL {
+        width: 15%;
+        height: 40%;
+    
+        background: transparent;
+        border-radius: 2%;
+        color: #fff;
+    
+        float: center   ;
+    
+        margin-top: 5px;
+    }
+    
+    #greenL button {
+        width: 50%;
+        height: 100%;
+        float: right;
+    
+        background: transparent;
+        color: inherit;
+        color: #fff;
+    
+        font-family: Montserrat;
+        letter-spacing: 1px;
+        font-weight: 900;
+        font-size: 12px;
+    
+        cursor: pointer;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    

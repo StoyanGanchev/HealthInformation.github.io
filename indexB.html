@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Логин и Регистрация</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> Информация за устройство </h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Име">
+                        <input type="email" id="email" placeholder="Имейл (логин)">
+                        <input type="password" id="password" placeholder="Парола (логин)">
+                        <input type="text" id="device_num" placeholder="Номер на устройство">
+
+
+
+
+                        <div id="button_container">
+                            <button onclick="login()">Логин</button>
+                            <button onclick="register()">Регистрация</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+<!-- import other Firebase services if needed -->
+<script >import {firebase} from "firebase/app";</script>
+    <script src="indexB.js"></script>
+
+</html>

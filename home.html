@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+</head>
+<body>   
+    <script type="text/javascript"> function codeAddress() {get_info()}window.onload = codeAddress;
+    setInterval(function(){show_last_value()}, 5000);
+    setInterval(function(){separateValues()}, 5000);
+    </script>
+    	
+
+    <div class = "menu"><h1>Device Information</h1></div>
+
+    <div class = "greeting"><h1 id ="greeting"></h1></div>
+
+    <div class = "parameters">
+    <div id = "params_info"> <h2>Temperature</h2></div>
+    <div id = "params_info"> <h2>Saturation</h2></div>
+    <div id = "params_info"> <h2>Heart rate</h2></div>
+</div>
+
+    <div class = "info_container">
+        <div id = "left_info"> <h1 id="temperature">Temperature</h1></div>
+        <div id = "center_info"><h1 id ="saturation">Saturation</h1></div>
+        <div id = "right_info"><h1 id="pulse">Heart rate</h1></div>
+    </div>
+
+    <div id = "button_info"><button  onclick="show_last_value();separateValues()"><h1>Get Information</h1></button></div>
+
+    <footer>
+        <div id="green"><button onclick="sendChangePasswordEmail()">Change password</button></div>
+
+        <p>Author: Stoyan Ganchev<br>
+            <a href="mailto:s.ganchev2002@gmail.com">s.ganchev2002@gmail.com</a></p>
+            <div id = "greenL"><a href="index.html"><button>Logout</button></a></div>
+            <div id = "greenL"><a href="homeB.html"><button>BG</button></a></div>
+
+
+    </footer>
+</body>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+<script >import {firebase} from "firebase/app";</script>
+    <script src="index.js"></script>
+</html>
+
+
